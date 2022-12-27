@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,jsonify
 import socket
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ def index():
 
 @app.route("/ping")
 def ping():
-    return {"ping" : "pong"}
+    return jsonify({"ping" : "pong"})
 
     
 if __name__ == "__main__":
