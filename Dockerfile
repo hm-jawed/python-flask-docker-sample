@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM 512436868621.dkr.ecr.us-east-1.amazonaws.com/python:3.6
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
